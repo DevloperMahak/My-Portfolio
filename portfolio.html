@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script>
+    function openModal1() {
+      document.getElementById("projectModal1").style.display = "block";
+    }
+    function closeModal1() {
+      document.getElementById("projectModal1").style.display = "none";
+    }
+    function openModal2() {
+      document.getElementById("projectModal2").style.display = "block";
+    }
+    function closeModal2() {
+      document.getElementById("projectModal2").style.display = "none";
+    }
+    function openModal3() {
+      document.getElementById("projectModal3").style.display = "block";
+    }
+    function closeModal3() {
+      document.getElementById("projectModal3").style.display = "none";
+    }
+  </script>
     <script src="https://kit.fontawesome.com/2252e58917.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -55,17 +75,17 @@
     <a name="About">
     <section class="about" id="about">
         <div class="about-img">
-        <img src="images/IMG_20240613_085240.jpg">
+        <img src="images/black_saree.jpeg">
         </div>
         <div class="about-content">
             <h2 class="heading1">ABOUT<span>Me</span></h2>
-            <h3>Frontend Developer</h3>
+            <h3>FullStack Developer</h3>
             <p>I am a dedicated Full Stack Developer with strong expertise in both front-end and 
                 back-end technologies. I have honed my skills in various programming languages and
                  development tools. I possess a solid understanding of software development practices
                  and have hands-on experience in building applications, highlighted by my projects.
              </p>
-             <a href="#" class="btn">Read more</a>
+             <a href="about.html" class="btn">Read more</a>
         </div>
     </section>
      <!--SERVICES SECTION DESIGN-->
@@ -100,65 +120,74 @@
      <a name="Portfolio">
         <section class="portfolio" id="portfolio">
         <h2 class="heading3">Latest<span>Projects</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-            <div id="img1"></div>
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                    producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                    </div>
-                    </div>
-            
-            <div class="portfolio-box">
-            <div id="img2"></div>
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                    producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-            </div>
+          <section class="projects-section">
+    <div class="project-card" onclick="openModal1()">
+      <img src="images/Reusebook_logo.png" alt="ReuseBook" />
+      <div class="card-content">
+        <h3>ReuseBook App</h3>
+        <p> 📚 Reuse Book is interactive platform for connecting two users (specially for students) for selling and purchasing old books.Built using Flutter, Node.js & MongoDB.</p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+     <div class="project-card" onclick="openModal2()">
+      <img src="images/Askmytutor.png" alt="Askmytutor" />
+      <div class="card-content">
+        <h3>Askmytutor App</h3>
+        <p>A real-time AI-powered tutoring app where students can submit text, voice, or image-based doubts to get instant AI solutions via GROQ, or Collaborate and discuss with others in a shared space.
+        </p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal3()">
+      <img src="images/Frame1.png" alt="BridgeNext" />
+      <div class="card-content">
+        <h3>BridgeNext UI/UX</h3>
+        <p>I Serve as the UI/UX and Logo Designer of BridgeNext App using Figma by deeply understanding the requirements of client and purpose behind the app development.
+        </p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+  </section>
 
-            <div class="portfolio-box">
-            <div id="img3"></div>
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                    producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-            </div>
+  <!-- Modal -->
+  <div id="projectModal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal1()">&times;</span>
+      <h2>ReuseBook Project</h2>
+      <p><strong>Tech Stack:</strong> Flutter, Node.js, Express.js, Figma, GetX, RestAPI MongoDB</p>
+      <p> 📚 Reuse Book is interactive platform for connecting two users (specially for students) for selling and purchasing old books.It is very useful for one who want to buy books at low prices and one who want to sell their old books at half prices .The old books shopkeeper also include in this app.</p>
+      <a href="https://github.com/DevloperMahak/Reusebook.git" target="_blank" class="visit-btn">Visit GitHub</a>
+    </div>
+  </div>
 
-            <div class="portfolio-box">
-            <div id="img4"></div>
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                    producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-            </div>
+   <div id="projectModal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal2()">&times;</span>
+      <h2>Askmytutor Project</h2>
+      <p><strong>Tech Stack:</strong> Flutter, Node.js, Express.js, MongoDB, Figma, Tesseract.js, GROQ LLM API</p>
+      <p> A real-time AI-powered tutoring app where students can : <br>
+        ✅ Solve doubts using AI through voice, image, and text input <br>
 
-            <div class="portfolio-box">
-            <div id="img5"></div>
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                    producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-            </div>
-            <div class="portfolio-box">
-                <div id="img6"></div>
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>I have a keen interest in web developement,especially in frontend developement.High level experience in web design and developement knowledge,
-                        producing quality work.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-        </div>
+        ✅ Collaborate and discuss with others in a shared space <br>
+
+        ✅ Get instant help with subject-specific prompts powered by GROQ’s advanced LLM <br>
+
+        ✅ Experience an intuitive and responsive interface designed for students <br>
+      </p>
+      <a href="https://github.com/DevloperMahak/AI_Project.git" target="_blank" class="visit-btn">Visit GitHub</a>
+    </div>
+  </div>
+
+  <div id="projectModal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal3()">&times;</span>
+      <h2>BridgeNext Project</h2>
+      <p><strong>Tech Stack:</strong> Figma</p>
+      <p> I serve as the UI/UX and Logo Designer for the BridgeNext App, utilizing Figma to create intuitive and visually compelling designs. My approach is rooted in a deep understanding of the client's requirements and the core purpose behind the app's development.</p>
+      <a href="https://www.figma.com/design/cD9Rs9bI6sJKln2ASRsf2Z/Bridge-Next-App?node-id=178-34&t=KzfpXdVahlavFc3c-1" target="_blank" class="visit-btn">Visit Figma</a>
+    </div>
+  </div>
+       
     </section>
     <!--CONTACT SECTION DESIGN-->
     <a name="Contact">
@@ -174,16 +203,17 @@
 
     <!-- Contact Form Section -->
     <div class="contact-form">
-    <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6a6e6db4-be1e-4734-bbae-73e34dd7b048">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" name="full_name" placeholder="Full Name"required>
+            <input type="email" name="email" placeholder="Email Address" required>
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="text" name="subject" placeholder="Email Subject" required>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit"value="Send Message" class="btn">
     </form>
 </div>

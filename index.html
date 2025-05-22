@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script>
+    function openModal1() {
+      document.getElementById("projectModal1").style.display = "block";
+    }
+    function closeModal1() {
+      document.getElementById("projectModal1").style.display = "none";
+    }
+    function openModal2() {
+      document.getElementById("projectModal2").style.display = "block";
+    }
+    function closeModal2() {
+      document.getElementById("projectModal2").style.display = "none";
+    }
+    function openModal3() {
+      document.getElementById("projectModal3").style.display = "block";
+    }
+    function closeModal3() {
+      document.getElementById("projectModal3").style.display = "none";
+    }
+  </script>
+    <script src="https://kit.fontawesome.com/2252e58917.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <!--Header Design-->
+    <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    Mahak
+                </div>
+                <i class="fa fa-solid fa-bars"id="menu-icon"></i>
+                <div class="headings">
+                <a href="#Home" class="active">Home</a>
+                <a href="#About" class="active">About</a>
+                <a href="#Services" class="active">Services</a>
+                <a href="#Portfolio" class="active">Portfolio</a>
+                <a href="#Contact" class="active">Contact</a>
+                </div>
+                <a href="https://wa.me/7860868701" target="_blank">
+                <button class="chat">Chat</button>
+                </a>
+             </nav>
+    </header>
+    <!--HOME SECTION DESIGN-->
+    <a name="Home">
+    <section class="home"id="home">
+        <div class="home-content">
+            <h1>Hi,Myself</h1>
+            <h1>Mahak Gupta</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3><br>
+            <p>I am a dedicated Full Stack Developer with strong expertise in both front-end and 
+                back-end technologies. I have honed my skills in various programming languages and
+                 development tools.
+            </p>
+            <a href="assets/My Resume.pdf" class="btn2">Download CV</a>
+            <div class="social-media">
+                <a href="https://github.com/DevloperMahak/My_programs.git"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahakguptaji2005@gmail.com&subject=Hello&body=Hi,%20I%20want%20to%20connect%20with%20you!"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mahak-gupta-88835226a"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+           </div>
+           <div id="image"></div>
+    </section>
+    <!--ABOUT SECTION DESIGN-->
+    <a name="About">
+    <section class="about" id="about">
+        <div class="about-img">
+        <img src="images/black_saree.jpeg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading1">ABOUT<span>Me</span></h2>
+            <h3>FullStack Developer</h3>
+            <p>I am a dedicated Full Stack Developer with strong expertise in both front-end and 
+                back-end technologies. I have honed my skills in various programming languages and
+                 development tools. I possess a solid understanding of software development practices
+                 and have hands-on experience in building applications, highlighted by my projects.
+             </p>
+             <a href="about.html" class="btn">Read more</a>
+        </div>
+    </section>
+     <!--SERVICES SECTION DESIGN-->
+     <a name="Services">
+     <section class="services" id="services">
+     <h2 class="heading2">My<span>Services</span></h2>
+     <div class="services-container">
+        <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>I am a proficient web developer with expertise in HTML, CSS, JavaScript, React.js, Tailwind CSS, and Bootstrap, combined with a strong backend 
+                foundation in Node.js, Express.js, and REST APIs to build scalable and high-performance web applications.</p>
+                <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="services-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>UI/UX Designer</h3>
+            <p>I have a strong passion for UI/UX design, using Figma to create visually appealing and user-friendly interfaces. With extensive experience in 
+                design and development, I focus on delivering high-quality, impactful solutions.</p>
+                <a href="#" class="btn">Read more</a>
+               </div>
+                <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+            <p>I am a dedicated app developer with strong expertise in Flutter and React Native for building dynamic front-end interfaces. I specialize in 
+                backend development using Node.js, Express.js, and REST APIs, while ensuring data security with MongoDB.</p>
+                <a href="#" class="btn">Read more</a>
+        </div>
+        </div>
+        </section>
+     <!--PORTFOLIO SECTION DESIGN-->
+     <a name="Portfolio">
+        <section class="portfolio" id="portfolio">
+        <h2 class="heading3">Latest<span>Projects</span></h2>
+          <section class="projects-section">
+    <div class="project-card" onclick="openModal1()">
+      <img src="images/Reusebook_logo.png" alt="ReuseBook" />
+      <div class="card-content">
+        <h3>ReuseBook App</h3>
+        <p> 📚 Reuse Book is interactive platform for connecting two users (specially for students) for selling and purchasing old books.Built using Flutter, Node.js & MongoDB.</p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+     <div class="project-card" onclick="openModal2()">
+      <img src="images/Askmytutor.png" alt="Askmytutor" />
+      <div class="card-content">
+        <h3>Askmytutor App</h3>
+        <p>A real-time AI-powered tutoring app where students can submit text, voice, or image-based doubts to get instant AI solutions via GROQ, or Collaborate and discuss with others in a shared space.
+        </p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal3()">
+      <img src="images/Frame1.png" alt="BridgeNext" />
+      <div class="card-content">
+        <h3>BridgeNext UI/UX</h3>
+        <p>I Serve as the UI/UX and Logo Designer of BridgeNext App using Figma by deeply understanding the requirements of client and purpose behind the app development.
+        </p>
+        <button class="view-btn">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="projectModal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal1()">&times;</span>
+      <h2>ReuseBook Project</h2>
+      <p><strong>Tech Stack:</strong> Flutter, Node.js, Express.js, Figma, GetX, RestAPI MongoDB</p>
+      <p> 📚 Reuse Book is interactive platform for connecting two users (specially for students) for selling and purchasing old books.It is very useful for one who want to buy books at low prices and one who want to sell their old books at half prices .The old books shopkeeper also include in this app.</p>
+      <a href="https://github.com/DevloperMahak/Reusebook.git" target="_blank" class="visit-btn">Visit GitHub</a>
+    </div>
+  </div>
+
+   <div id="projectModal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal2()">&times;</span>
+      <h2>Askmytutor Project</h2>
+      <p><strong>Tech Stack:</strong> Flutter, Node.js, Express.js, MongoDB, Figma, Tesseract.js, GROQ LLM API</p>
+      <p> A real-time AI-powered tutoring app where students can : <br>
+        ✅ Solve doubts using AI through voice, image, and text input <br>
+
+        ✅ Collaborate and discuss with others in a shared space <br>
+
+        ✅ Get instant help with subject-specific prompts powered by GROQ’s advanced LLM <br>
+
+        ✅ Experience an intuitive and responsive interface designed for students <br>
+      </p>
+      <a href="https://github.com/DevloperMahak/AI_Project.git" target="_blank" class="visit-btn">Visit GitHub</a>
+    </div>
+  </div>
+
+  <div id="projectModal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal3()">&times;</span>
+      <h2>BridgeNext Project</h2>
+      <p><strong>Tech Stack:</strong> Figma</p>
+      <p> I serve as the UI/UX and Logo Designer for the BridgeNext App, utilizing Figma to create intuitive and visually compelling designs. My approach is rooted in a deep understanding of the client's requirements and the core purpose behind the app's development.</p>
+      <a href="https://www.figma.com/design/cD9Rs9bI6sJKln2ASRsf2Z/Bridge-Next-App?node-id=178-34&t=KzfpXdVahlavFc3c-1" target="_blank" class="visit-btn">Visit Figma</a>
+    </div>
+  </div>
+       
+    </section>
+    <!--CONTACT SECTION DESIGN-->
+    <a name="Contact">
+    <section class="contact" id="contact">
+    <h2 class="heading4">Contact<span>Me</span></h2>
+
+    <div class="contact-container">
+     <!-- Contact Information Section -->
+    <div class = "contact-details">
+        <p>Get In Touch</p>
+        <div id="contact-image"></div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6a6e6db4-be1e-4734-bbae-73e34dd7b048">
+        <div class="input-box">
+            <input type="text" name="full_name" placeholder="Full Name"required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="text" name="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit"value="Send Message" class="btn">
+    </form>
+</div>
+</div>
+    </section>
+    <!--FOOTER SECTION DESIGN-->
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-text">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <ul>
+                    <h2>Quick Links</h2>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Services" class="active">Services</a></li>
+                <li><a href="#Portfolio" class="active">Portfolio</a></li>
+                <li><a href="#Contact" class="active">Contact</a></li>
+            </ul>
+                </div>
+                <!-- Social Links -->
+                <div class="footer-section">
+                    <h2>Follow Us</h2>
+                    <ul class="social-links">
+                <li><a href="#"><i class="fab fa-telegram"></i>Telegram</a></li>
+                <li><a href="https://github.com/DevloperMahak/My_programs.git"><i class="fa-brands fa-github"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/mahak-gupta-88835226a"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
+            </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact Details</h2>
+                    <ul class="social-links">
+                <li><i class="fa-solid fa-envelope"></i>mahakguptaji2005@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i>(+91) 7860868701</li>
+            </ul>
+                </div>
+            </div>
+            <p>Copyrtght &copy; 2024 by @herethecode | All Rights Reserved.</p>
+        </div>
+    </footer>
+     <!------Typed JS------>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-------scroll reveal JS------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

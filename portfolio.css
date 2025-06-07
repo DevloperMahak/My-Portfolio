@@ -1147,6 +1147,9 @@ span{
     }
 }
 @media (max-width: 480px) {
+    .header{
+        height: 30px;
+    }
     .home{
         display: flex;
         flex-direction: column-reverse;
@@ -1155,7 +1158,7 @@ span{
         justify-content: center;
     }
     .home-content{
-        width: 250px;
+        width: 80%;
     }
     .home-content h1 {
         font-size: 4rem;
@@ -1269,7 +1272,8 @@ span{
   }
 
   .view-btn {
-    margin-top: 0px;
+    width: 100px;
+    margin: 0px;
     padding: 8px 18px;
     font-size: 0.9rem;
   }
@@ -1342,9 +1346,10 @@ span{
     border-radius: 30px;
     font-size: 1rem;
     margin: 10px auto;
-   
 }
-    
+.project-card img{
+    display:inline;
+}    
 }
 
 

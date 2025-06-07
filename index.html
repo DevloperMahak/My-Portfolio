@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
     <script>
     function openModal1() {
       document.getElementById("projectModal1").style.display = "block";
@@ -26,8 +25,8 @@
     }
   </script>
     <script src="https://kit.fontawesome.com/2252e58917.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <link rel = "Stylesheet" href = "portfolio.css">
 
 </head>
 <body>
@@ -37,16 +36,18 @@
                 <div class="logo">
                     Mahak
                 </div>
-                <i class="fa fa-solid fa-bars"id="menu-icon"></i>
+                <div>
+                </div>
                 <div class="headings">
                 <a href="#Home" class="active">Home</a>
-                <a href="#About" class="active">About</a>
-                <a href="#Services" class="active">Services</a>
-                <a href="#Portfolio" class="active">Portfolio</a>
-                <a href="#Contact" class="active">Contact</a>
+                <a href="#About" class="active ">About</a>
+                <a href="#Services" class="active ">Services</a>
+                <a href="#Portfolio" class="active ">Portfolio</a>
+                <a href="#Contact" class="active ">Contact</a>
                 </div>
                 <a href="https://wa.me/7860868701" target="_blank">
                 <button class="chat">Chat</button>
+                <i class="fa fa-bars" id="menu-icon"></i>
                 </a>
              </nav>
     </header>
@@ -54,18 +55,18 @@
     <a name="Home">
     <section class="home"id="home">
         <div class="home-content">
-            <h1>Hi,Myself</h1>
-            <h1>Mahak Gupta</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3><br>
+            <h1 >Hi,Myself</h1>
+            <h1 >Mahak Gupta</h1>
+            <h3 >And I'm a <span class="multiple-text"></span></h3><br>
             <p>I am a dedicated Full Stack Developer with strong expertise in both front-end and 
                 back-end technologies. I have honed my skills in various programming languages and
                  development tools.
             </p>
             <a href="assets/My_Resume.pdf" class="btn2">Download CV</a>
             <div class="social-media">
-                <a href="https://github.com/DevloperMahak/My_programs.git"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahakguptaji2005@gmail.com&subject=Hello&body=Hi,%20I%20want%20to%20connect%20with%20you!"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/DevloperMahak/My_programs.git" ><i class="fa-brands fa-github "></i></a>
+                <a href="#"><i class="fab fa-telegram "></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahakguptaji2005@gmail.com&subject=Hello&body=Hi,%20I%20want%20to%20connect%20with%20you!"><i class="fa-solid fa-envelope "></i></a>
                 <a href="https://www.linkedin.com/in/mahak-gupta-88835226a"><i class="fa-brands fa-linkedin"></i></a>
             </div>
            </div>
@@ -90,7 +91,7 @@
     </section>
      <!--SERVICES SECTION DESIGN-->
      <a name="Services">
-     <section class="services" id="services">
+     <section class="services bg-gradient-to-r from-[#AFD3E2]  to-[#19A7CE] w-[100%] h-[100vh]" id="services">
      <h2 class="heading2">My<span>Services</span></h2>
      <div class="services-container">
         <div class="services-box">
@@ -118,7 +119,7 @@
         </section>
      <!--PORTFOLIO SECTION DESIGN-->
      <a name="Portfolio">
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio bg-gradient-to-r from-[#1679AB]  to-[#074173] w-[100%] h-[100vh]" id="portfolio">
         <h2 class="heading3">Latest<span>Projects</span></h2>
           <section class="projects-section">
     <div class="project-card" onclick="openModal1()">
@@ -191,7 +192,7 @@
     </section>
     <!--CONTACT SECTION DESIGN-->
     <a name="Contact">
-    <section class="contact" id="contact">
+    <section class="contact bg-gradient-to-r from-[#AFD3E2]  to-[#19A7CE] w-[100%] h-[100vh]" id="contact">
     <h2 class="heading4">Contact<span>Me</span></h2>
 
     <div class="contact-container">
@@ -212,7 +213,7 @@
         <div class="input-box">
             <input type="number" name="mobile_number" placeholder="Mobile Number" required>
             <input type="text" name="subject" placeholder="Email Subject" required>
-        </div>
+        </div class="input-box">
         <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit"value="Send Message" class="btn">
     </form>
@@ -220,7 +221,7 @@
 </div>
     </section>
     <!--FOOTER SECTION DESIGN-->
-    <footer class="footer">
+    <footer class="footer bg-[black] w-[100%] min-h-[220px]">
         <div class="footer-container">
         <div class="footer-text">
             <!-- Quick Links -->

@@ -153,8 +153,10 @@ section{
     border-width:3px ;
     border-color:#146C94;
     box-shadow: 0 0 3rem #fdfefe;
-    background-image: url("images/myphoto.jpg");
-    background-size: contain;
+    background-image: url("images/IMG.jpg");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
     animation: floatimage 4s ease-in-out infinite;
 }
 @keyframes floatimage{

@@ -1,6 +1,6 @@
 /*--------scroll section active link----------*/
 let sections=document.querySelectorAll('section');
-let navlinks=document.querySelector('header nav a');
+let navlinks=document.querySelectorAll('header nav a');
 window.onscroll=()=>{
     sections.forEach(sec=>{
         let top=window.scrollY;
@@ -9,8 +9,8 @@ window.onscroll=()=>{
         let id=sec.getAttribute('id');
 
         if(top>=offset && top<offset+height){
-            navlinks.forEach.apply(links=>{
-                links.classlist.remove('active');
+            navlinks.forEach(links=>{
+                links.classList.remove('active');
                 document.querySelector('header nav a[href='+id +']').classList.add('active');
             });
         };
@@ -37,6 +37,13 @@ window.onscroll=()=>{
        backDelay:1000,
        loop:true,
      });
+/*----------------MENU ON NAVBAR -------------*/
+      const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.getElementById('navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
 
 
 

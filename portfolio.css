@@ -925,6 +925,11 @@ span{
    .navbar {
     padding: 10px 20px;
    }
+.navbar .active::after{
+    display: none;
+
+}
+
     #menu-icon {
         display: block;
     }
